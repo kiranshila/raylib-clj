@@ -1,7 +1,12 @@
 # raylib-clj
 
-> A Clojure Game Engine wrapping the fantastic Raylib 4.0 library with the
-> native-performance Project Panama Clojure wrapper Coffi
+> A Clojure Game Engine wrapping the fantastic [Raylib](https://www.raylib.com/) library with the
+> native-performance Project Panama Clojure wrapper [Coffi](https://github.com/IGJoshua/coffi)
+
+## Requirements
+
+You must have at least Java 17 to use the new Project Panama and Raylib
+installed as a system-level dynamic library. We can probably ship binaries eventually.
 
 ## Structure
 
