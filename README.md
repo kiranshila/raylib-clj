@@ -12,7 +12,7 @@ installed as a system-level dynamic library. We can probably ship binaries event
 
 The main structure of this library follows that of raylib, but organized into
 namespaced-functional blocks following the
-(cheatsheet)[https://www.raylib.com/cheatsheet/cheatsheet.html].
+[cheatsheet](https://www.raylib.com/cheatsheet/cheatsheet.html).
 Function names follow the raylib names, but formatted to the clojure-friendly kebab-case
 style. Functions that mutate global state will end with a bang (`!`) and those
 that return bools end in `?`. For example, the function to initialize the window
