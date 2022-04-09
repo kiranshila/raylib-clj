@@ -1,5 +1,6 @@
 (ns raylib.core.timing
   (:require
+   [raylib.core]
    [coffi.mem :as mem]
    [coffi.ffi :refer [defcfn]]))
 

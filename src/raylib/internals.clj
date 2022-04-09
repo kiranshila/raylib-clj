@@ -1,9 +1,5 @@
 (ns raylib.internals
-  (:require [coffi.mem :as mem]
-            [coffi.ffi :as ffi]))
-
-;; Load the raylib library
-(ffi/load-system-library "raylib")
+  (:require [coffi.mem :as mem]))
 
 ;; ubyte
 (defmethod mem/primitive-type ::ubyte

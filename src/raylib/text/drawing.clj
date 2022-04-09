@@ -1,5 +1,6 @@
 (ns raylib.text.drawing
   (:require
+   [raylib.core]
    [raylib.structs :as rs]
    [coffi.mem :as mem]
    [coffi.ffi :refer [defcfn]]))

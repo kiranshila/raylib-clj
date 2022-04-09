@@ -58,3 +58,9 @@ clj -M:dev -m examples.core.basic-window
 ```
 
 for the above example.
+
+## Benchmarks
+
+To bench our wrapper, we will compare against the tried and true
+[bunnymark](https://github.com/raysan5/raylib/blob/master/examples/textures/textures_bunnymark.c).
+Most other wrappers target this as well, so it'll be nice to compare.

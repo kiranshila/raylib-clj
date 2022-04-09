@@ -27,3 +27,11 @@
     [:y ::mem/float]
     [:z ::mem/float]
     [:w ::mem/float]]])
+
+(defalias ::texture
+  [::mem/struct
+   [[:id ::mem/int]
+    [:width ::mem/int]
+    [:height ::mem/int]
+    [:mipmaps ::mem/int]
+    [:format ::mem/int]]])
