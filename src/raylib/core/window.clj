@@ -54,3 +54,17 @@
   "Check if window has been resized last frame"
   "IsWindowResized"
   [] ::ri/bool)
+
+; ...
+
+(defcfn get-screen-width
+  "Get current screen width"
+  "GetScreenWidth"
+  [] ::mem/int)
+
+(defcfn get-screen-height
+  "Get current screen height"
+  "GetScreenHeight"
+  [] ::mem/int)
+
+; ...

@@ -1,4 +1,6 @@
 {:paths ["src" "examples"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}
         org.suskalo/coffi {:mvn/version "0.4.341"}}
- :aliases {:dev {:jvm-opts ["--add-modules=jdk.incubator.foreign" "--enable-native-access=ALL-UNNAMED"]}}}
+ :aliases {:dev
+           {:jvm-opts ["--add-modules=jdk.incubator.foreign" "--enable-native-access=ALL-UNNAMED"]
+            :extra-deps {com.taoensso/tufte {:mvn/version "2.2.0"}}}}}
