@@ -3,7 +3,7 @@
    [raylib.core.window :as rcw]
    [raylib.core.timing :as rct]
    [raylib.core.drawing :as rcd]
-   [raylib.core.input :as rci]
+   [raylib.core.keyboard :as rck]
    [raylib.text.drawing :as rtd]
    [raylib.shapes.basic :as rsb]
    [raylib.enums :refer [keyboard-key]]
@@ -21,13 +21,13 @@
   ;; Main Game Loop
   (while (not (rcw/window-should-close?))
     ; Updates
-    (when (rci/is-key-down? (keyboard-key :right))
+    (when (rck/is-key-down? (keyboard-key :right))
       (swap! ball-position update :x (partial + 2)))
-    (when (rci/is-key-down? (keyboard-key :left))
+    (when (rck/is-key-down? (keyboard-key :left))
       (swap! ball-position update :x (partial + -2)))
-    (when (rci/is-key-down? (keyboard-key :up))
+    (when (rck/is-key-down? (keyboard-key :up))
       (swap! ball-position update :y (partial + -2)))
-    (when (rci/is-key-down? (keyboard-key :down))
+    (when (rck/is-key-down? (keyboard-key :down))
       (swap! ball-position update :y (partial + 2)))
     ; Draw
     (rcd/begin-drawing!)

@@ -14,3 +14,11 @@
   [::rs/vector-2 ::mem/float ::rs/color] ::mem/void)
 
 ; ...
+
+(defcfn draw-rectangle!
+  "Draw a color-filled rectangle"
+  {:arglists '([x y width height color])}
+  "DrawRectangle"
+  [::mem/int ::mem/int ::mem/int ::mem/int ::rs/color] ::mem/void)
+
+; ...

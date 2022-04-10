@@ -10,3 +10,5 @@
   {:arglists '([filename])}
   "LoadTexture"
   [::mem/c-string] ::rs/texture)
+
+; ...

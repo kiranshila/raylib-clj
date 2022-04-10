@@ -1,4 +1,4 @@
-(ns raylib.core.input
+(ns raylib.core.keyboard
   (:require
    [raylib.core]
    [raylib.internals :as ri]
