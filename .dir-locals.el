@@ -1,1 +1,1 @@
-((clojure-mode . ((cider-clojure-cli-global-options . "-M:dev"))))
+((clojure-mode . ((cider-clojure-cli-global-options . "-A:dev"))))
