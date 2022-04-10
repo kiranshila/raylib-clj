@@ -3,12 +3,14 @@
    [raylib.core]
    [raylib.structs :as rs]
    [coffi.mem :as mem]
-   [coffi.ffi :refer [defcfn]]))
+   [coffi.ffi :as ffi :refer [defcfn]]))
 
-(defcfn draw-texture!
-  "Draw a texture"
-  {:arglists '([texture x y tint])}
-  "DrawTexture"
-  [::rs/texture ::mem/int ::mem/int ::rs/color] ::mem/void)
+(def draw-texture!*
+  (let [primfn (ffi/make-downcall "DrawTexture" [::rs/texture ::mem/int ::mem/int ::rs/color] ::mem/void)]
+    (fn [texture x y tint]
+      (primfn texture (int x) (int y) tint))))
+
+(def draw-texture!
+  (ffi/make-serde-wrapper draw-texture!* [::rs/texture ::mem/int ::mem/int ::rs/color] ::mem/void))
 
 ; ...
